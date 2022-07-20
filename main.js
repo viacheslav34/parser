@@ -1,3 +1,4 @@
+//ПАРСЕР 
 /*
 const cheerio = require('cheerio');
 const axios = require('axios');
@@ -13,6 +14,12 @@ axios.get('https://vk.com/idvorona123').then(data => {
 }
 console.log(getOrder())
 */
+
+//
+//ПАРСЕР ДЛЯ ТРЕКОВ
+//
+
+/*
 let tracks = []
 let a = document.body.querySelectorAll('a.audio_row__title_inner._audio_row__title_inner')
 for(let i = 0; i<a.length;i++){
@@ -39,3 +46,16 @@ res.forEach(function(elem){
 })
 
 console.log(res)
+*/
+
+//
+//ЗАДАЧА С CODEWARS
+//
+
+function wave(str){
+    let mus = str.split('')
+    let res = []
+    res.push([].join.call(mus.map(item => item.toUpperCase()),"")) 
+    return res
+  }
+  console.log(wave('hellow'))
